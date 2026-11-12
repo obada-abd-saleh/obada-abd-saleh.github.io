@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Obada Saleh, senior full-stack engineer. Laravel, NestJS, Vue.js and Angular. Platforms for education, payments and access control.">
 <title>Obada Saleh</title>
-<link rel="canonical" href="https://obadasaleh9494.github.io/">
+<link rel="canonical" href="https://obada-saleh.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Obada Saleh">
 <meta property="og:title" content="Obada Saleh">
 <meta property="og:description" content="Senior full-stack engineer. Laravel, NestJS, Vue.js and Angular. Platforms for education, payments and access control.">
-<meta property="og:url" content="https://obadasaleh9494.github.io/">
-<meta property="og:image" content="https://obadasaleh9494.github.io/og.jpg">
+<meta property="og:url" content="https://obada-saleh.github.io/">
+<meta property="og:image" content="https://obada-saleh.github.io/og.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Obada Saleh">
 <meta name="twitter:description" content="Senior full-stack engineer. Platforms for education, payments and access control.">
-<meta name="twitter:image" content="https://obadasaleh9494.github.io/og.jpg">
+<meta name="twitter:image" content="https://obada-saleh.github.io/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Readex+Pro:wght@300..700&display=swap">
@@ -268,6 +268,12 @@ td.num{font-variant-numeric:tabular-nums}
 .row.exp{grid-template-columns:13rem minmax(0,1fr) minmax(0,1.1fr)}
 .row h3{font-size:1.4rem;margin-bottom:.55rem}
 .row p{color:var(--ink-2);font-size:.97rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+.visit{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .95rem;border:1px solid var(--line);border-radius:99px;color:var(--ink);text-decoration:none;font:500 .88rem var(--font-body);background:transparent;transition:border-color .2s,color .2s,background .2s}
+.visit svg{flex:none;transition:transform .25s}
+.visit:hover{border-color:var(--accent);color:var(--accent)}
+.visit:hover svg{transform:translate(2px,-2px)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .period{font:500 .8rem var(--font-mono);color:var(--ink)}
 html[lang="ar"] .period{font-family:var(--font-body);font-size:.9rem}
 .org{color:var(--muted);font-size:.88rem;margin-top:.2rem}
@@ -694,22 +700,22 @@ html[dir="rtl"] .row::before{transform-origin:100% 50%}
       </li>
       <li class="row">
         <div><p class="period" data-i18n="q1_p">Feb 2023 to May 2025</p><p class="org" data-i18n="q1_o">Qupil, UAE (remote)</p></div>
-        <div><h3>Qupil</h3><p data-i18n="q1_d">Full-stack features in a team of about 10: lesson booking, payment flows, notifications, backend APIs and mobile features for an app with 700,000+ users across Android and iPhone combined. I added MongoDB indexes on high-frequency queries to keep booking flows and repeated data retrieval efficient.</p></div>
+        <div><h3>Qupil</h3><p data-i18n="q1_d">Full-stack features in a team of about 10: lesson booking, payment flows, notifications, backend APIs and mobile features for an app with 700,000+ users across Android and iPhone combined. I added MongoDB indexes on high-frequency queries to keep booking flows and repeated data retrieval efficient.</p><p class="links"><a class="visit" href="https://qupil.net/" target="_blank" rel="noopener noreferrer"><span data-i18n="visit">Visit site</span><span class="sr" data-i18n="newtab"> (opens in a new tab)</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p></div>
         <div class="stack"><span>NestJS</span><span>Angular</span><span>TypeScript</span><span>MongoDB</span><span>Redis</span><span>React Native</span></div>
       </li>
       <li class="row">
         <div><p class="period" data-i18n="q2_p">Jan 2021 to Jan 2023</p><p class="org" data-i18n="q2_o">Atlantic Xchange, USA (contract)</p></div>
-        <div><h3 data-i18n="q2_t">AX remittance platform</h3><p data-i18n="q2_d">Primary developer of a production platform handling real financial transactions. I designed the database and application structure, built dynamic RBAC for financial workflows and integrated REST APIs with 10 service providers. Provider logic lives in service-layer components with Redis caching and MySQL indexing across transaction paths, and I handled logs and operational troubleshooting.</p></div>
+        <div><h3 data-i18n="q2_t">AX remittance platform</h3><p data-i18n="q2_d">Primary developer of a production platform handling real financial transactions. I designed the database and application structure, built dynamic RBAC for financial workflows and integrated REST APIs with 10 service providers. Provider logic lives in service-layer components with Redis caching and MySQL indexing across transaction paths, and I handled logs and operational troubleshooting.</p><p class="links"><a class="visit" href="https://atlanticxchange.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="visit">Visit site</span><span class="sr" data-i18n="newtab"> (opens in a new tab)</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p></div>
         <div class="stack"><span>Laravel</span><span>Vue.js</span><span>TypeScript</span><span>MySQL</span><span>Redis</span><span>REST APIs</span></div>
       </li>
       <li class="row">
         <div><p class="period" data-i18n="q3_p">Jun 2021 to Jan 2023</p><p class="org" data-i18n="q3_o">Freelance</p></div>
-        <div><h3>Mall Options</h3><p data-i18n="q3_d">A multi-site structure that manages stores, sections and digital content for Mall of Arabia and Mall of Tanta from one shared administration model.</p></div>
+        <div><h3>Mall Options</h3><p data-i18n="q3_d">A multi-site structure that manages stores, sections and digital content for Mall of Arabia and Mall of Tanta from one shared administration model.</p><p class="links"><a class="visit" href="https://www.malloftanta.com/" target="_blank" rel="noopener noreferrer"><span>Mall of Tanta</span><span class="sr" data-i18n="newtab"> (opens in a new tab)</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="visit" href="https://www.mallofarabia.net/" target="_blank" rel="noopener noreferrer"><span>Mall of Arabia</span><span class="sr" data-i18n="newtab"> (opens in a new tab)</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p></div>
         <div class="stack"><span>Laravel</span><span>Vue.js</span><span>Nuxt.js</span></div>
       </li>
       <li class="row">
         <div><p class="period" data-i18n="q4_p">Mar 2019 to Dec 2020</p><p class="org" data-i18n="q4_o">AutoTech Company, Damascus</p></div>
-        <div><h3 data-i18n="q4_t">RRIG Energy and Chery Syria</h3><p data-i18n="q4_d">Laravel and Vue.js web solutions for oil-and-gas and automotive clients, including the frontend and backend features each client requested.</p></div>
+        <div><h3 data-i18n="q4_t">RRIG Energy and Chery Syria</h3><p data-i18n="q4_d">Laravel and Vue.js web solutions for oil-and-gas and automotive clients, including the frontend and backend features each client requested.</p><p class="links"><a class="visit" href="https://www.rrigenergy.com/" target="_blank" rel="noopener noreferrer"><span>RRIG Energy</span><span class="sr" data-i18n="newtab"> (opens in a new tab)</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="visit" href="https://chery-syria.com/" target="_blank" rel="noopener noreferrer"><span>Chery Syria</span><span class="sr" data-i18n="newtab"> (opens in a new tab)</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p></div>
         <div class="stack"><span>Laravel</span><span>Vue.js</span></div>
       </li>
     </ul>
@@ -931,7 +937,7 @@ html[dir="rtl"] .row::before{transform-origin:100% 50%}
     ed_t:"التعليم", ed_d:"إجازة في هندسة البرمجيات، جامعة اليرموك الخاصة، دمشق. من 2014 إلى 2019.",
     lg_t:"اللغات", lg_d:"العربية: لغة أم. الإنجليزية: جيدة.",
     ct_title:"تواصل معي", ct_sub:"للمشاريع أو التعاون أو الحديث عن أي من الأعمال أعلاه.",
-    ct_phone:"الهاتف", ct_email:"البريد الإلكتروني", ct_copy:"نسخ", ct_loc:"الموقع",
+    visit:"زيارة الموقع", newtab:" (يفتح في تبويب جديد)", ct_phone:"الهاتف", ct_email:"البريد الإلكتروني", ct_copy:"نسخ", ct_loc:"الموقع",
     h_cta1:"شاهد الأعمال المختارة",
     w_sub:"أنظمة قيد التشغيل في التعليم والحجوزات والتحويلات المالية والتجزئة وواجهات الشركات.",
     photo_label:"صورة شخصية لعبادة صالح",
