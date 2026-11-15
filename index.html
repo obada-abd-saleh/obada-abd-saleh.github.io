@@ -175,6 +175,8 @@ html[dir="rtl"] .deep>summary::before{border-right:0;border-left:1.5px solid cur
 html[dir="rtl"] .deep[open]>summary::before{transform:rotate(-45deg)}
 .deep>summary .hint{color:var(--muted);font-weight:400;font-size:.88rem}
 .deep[open]>summary{margin-bottom:1rem}
+.deep>summary{--beam-a:var(--accent-soft);--beam-b:var(--accent)}
+@supports (background:color-mix(in srgb,red,blue)){.deep>summary{--beam-b:color-mix(in srgb,var(--accent) 72%,transparent)}}
 
 /* rbac */
 .rbac-roles{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
@@ -379,6 +381,7 @@ html[dir="rtl"] .row::before{transform-origin:100% 50%}
   @keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent-soft)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
   @keyframes spin{to{transform:rotate(360deg)}}
   @keyframes swap{from{opacity:.2;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @keyframes beacon{0%,100%{box-shadow:0 0 0 0 transparent;border-color:var(--line)}40%,60%{box-shadow:0 0 0 4px var(--beam-a),0 0 38px 9px var(--beam-b);border-color:var(--accent)}}
 
   .hero::before{animation:drift 7s linear infinite}
   .brand .node{animation:pulse 2.6s ease-out infinite}
@@ -398,6 +401,8 @@ html[dir="rtl"] .row::before{transform-origin:100% 50%}
   .btn-primary::after{animation:shine 4.5s 2.5s infinite}
   .m-track{animation:marq 40s linear infinite}
   .icon-btn.spin svg{animation:spin .6s cubic-bezier(.3,.7,.2,1)}
+  .deep:not([open])>summary{animation:beacon 2.4s ease-in-out infinite}
+  .deep:not([open])>summary:hover,.deep:not([open])>summary:focus-visible{animation-play-state:paused;box-shadow:0 0 0 4px var(--beam-a),0 0 38px 9px var(--beam-b);border-color:var(--accent)}
   main.swap{animation:swap .45s ease-out}
 
   .rv{opacity:0;transform:translateY(28px)}
@@ -410,6 +415,7 @@ html[dir="rtl"] .row::before{transform-origin:100% 50%}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important}
+  .deep:not([open])>summary{border-color:var(--accent);box-shadow:0 0 0 3px var(--beam-a)}
   .m-track{width:auto;flex-wrap:wrap}
   .m-track .set+.set{display:none}
 }
